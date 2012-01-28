@@ -6,7 +6,7 @@
    <content type="xhtml" xml:lang="en">
       <div xmlns="http://www.w3.org/1999/xhtml">
           :feed_images
-          if @content do 
+          if @content do
             @content
           endif
       </div>

@@ -1,5 +1,5 @@
 {
-foreach $root do  
+foreach $root do
   if $children do
     "projects": [
     foreach $children do
@@ -10,7 +10,7 @@ foreach $root do
         "date": "@date",
         "updated": "@updated",
         "title": "@title",
-        "content": "@content",   
+        "content": "@content",
         "images": [
           foreach $images do
             "url": "@url",

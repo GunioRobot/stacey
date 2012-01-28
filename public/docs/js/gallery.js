@@ -16,15 +16,15 @@ Gallery = {
     this.prevButton = prevButton;
     this.descriptionHolder = descriptionHolder;
     this.descriptionWidth = descriptionWidth;
-    
+
     // check if a specific image has been specified in the URL
     if(document.URL.match(/#[0-9]+/)) {
       this.gotoImage(new Number(new String(document.URL.match(/#[0-9]+/)).replace("#", "")) - 1);
     } else {
       // write maxCount
       this.updateCount(0);
-    } 
-    // 
+    }
+    //
     this.attachEvents();
   },
   attachEvents: function() {
@@ -72,10 +72,10 @@ Gallery = {
     this.imageHolder.animate({
       marginLeft: (num * this.imageWrapperWidth) * -1 + "px"
     }, { duration: 600, queue: false });
-    
+
     // skip attempt to animate description holder if it does not exist
     if(!this.descriptionHolder) return;
-    
+
     this.descriptionHolder.animate({
       marginLeft: (num * this.descriptionWidth) * -1 + "px"
     }, { duration: 600, queue: false });

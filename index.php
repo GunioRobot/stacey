@@ -2,7 +2,7 @@
 
 # let people know if they are running an unsupported version of PHP
 if(phpversion() < 5) {
-  
+
   die('<h3>Stacey requires PHP/5.0 or higher.<br>You are currently running PHP/'.phpversion().'.</h3><p>You should contact your host to see if they can upgrade your version of PHP.</p>');
 
 } else {
@@ -14,7 +14,7 @@ if(phpversion() < 5) {
 
   # start the app
   new Stacey($_GET);
-  
+
 }
 
 ?>
